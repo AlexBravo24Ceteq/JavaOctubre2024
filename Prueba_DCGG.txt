@@ -1,1 +1,114 @@
 DAVID CONSTANTINO GUTIERREZ GUTIERREZ
+
+comandos: 
+DAVID-PC@DAVID-PC MINGW64 ~/Desktop/Git
+$ git clone https://github.com/AlexBravo24Ceteq/JavaOctubre2024.git
+Cloning into 'JavaOctubre2024'...
+remote: Enumerating objects: 4, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (4/4), done.
+
+DAVID-PC@DAVID-PC MINGW64 ~/Desktop/Git
+$ cd JavaOctubre2024/
+
+DAVID-PC@DAVID-PC MINGW64 ~/Desktop/Git/JavaOctubre2024 (main)
+$ git checkout
+Your branch is up to date with 'origin/main'.
+
+DAVID-PC@DAVID-PC MINGW64 ~/Desktop/Git/JavaOctubre2024 (main)
+$ git checkout develop
+Switched to a new branch 'develop'
+branch 'develop' set up to track 'origin/develop'.
+
+DAVID-PC@DAVID-PC MINGW64 ~/Desktop/Git/JavaOctubre2024 (develop)
+$ git branch rama1_dcgg
+
+DAVID-PC@DAVID-PC MINGW64 ~/Desktop/Git/JavaOctubre2024 (develop)
+$ git branch
+* develop
+  main
+  rama1_dcgg
+
+DAVID-PC@DAVID-PC MINGW64 ~/Desktop/Git/JavaOctubre2024 (develop)
+$ git checkout rama1_jabr
+error: pathspec 'rama1_jabr' did not match any file(s) known to git
+
+DAVID-PC@DAVID-PC MINGW64 ~/Desktop/Git/JavaOctubre2024 (develop)
+$ git checkout rama1_dcgg
+Switched to branch 'rama1_dcgg'
+
+DAVID-PC@DAVID-PC MINGW64 ~/Desktop/Git/JavaOctubre2024 (rama1_dcgg)
+$ git status
+On branch rama1_dcgg
+nothing to commit, working tree clean
+
+DAVID-PC@DAVID-PC MINGW64 ~/Desktop/Git/JavaOctubre2024 (rama1_dcgg)
+$ git status
+On branch rama1_dcgg
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Prueba_DCGG.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DAVID-PC@DAVID-PC MINGW64 ~/Desktop/Git/JavaOctubre2024 (rama1_dcgg)
+$ git add .
+
+DAVID-PC@DAVID-PC MINGW64 ~/Desktop/Git/JavaOctubre2024 (rama1_dcgg)
+$ git status
+On branch rama1_dcgg
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Prueba_DCGG.txt
+
+
+DAVID-PC@DAVID-PC MINGW64 ~/Desktop/Git/JavaOctubre2024 (rama1_dcgg)
+$ git commit -m "mi nombre y comandos git"
+[rama1_dcgg e4e232b] mi nombre y comandos git
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Prueba_DCGG.txt
+
+DAVID-PC@DAVID-PC MINGW64 ~/Desktop/Git/JavaOctubre2024 (rama1_dcgg)
+$ git push
+fatal: The current branch rama1_dcgg has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin rama1_dcgg
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+DAVID-PC@DAVID-PC MINGW64 ~/Desktop/Git/JavaOctubre2024 (rama1_dcgg)
+$ git push --set-upstream origin rama1_dcgg
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 374 bytes | 374.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'rama1_dcgg' on GitHub by visiting:
+remote:      https://github.com/AlexBravo24Ceteq/JavaOctubre2024/pull/new/rama1_dcgg
+remote:
+To https://github.com/AlexBravo24Ceteq/JavaOctubre2024.git
+ * [new branch]      rama1_dcgg -> rama1_dcgg
+branch 'rama1_dcgg' set up to track 'origin/rama1_dcgg'.
+
+DAVID-PC@DAVID-PC MINGW64 ~/Desktop/Git/JavaOctubre2024 (rama1_dcgg)
+$ git branch
+  develop
+  main
+* rama1_dcgg
+
+DAVID-PC@DAVID-PC MINGW64 ~/Desktop/Git/JavaOctubre2024 (rama1_dcgg)
+$ git branch rama1_jarg
+
+DAVID-PC@DAVID-PC MINGW64 ~/Desktop/Git/JavaOctubre2024 (rama1_dcgg)
+$ git branch
+  develop
+  main
+* rama1_dcgg
+  rama1_jarg
